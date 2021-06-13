@@ -64,7 +64,6 @@ class LoginScreen extends StatelessWidget {
 
               //Navegacion usando rutas nombradas(alias)
               Navigator.pushNamed(context, '/dashboard');
-              print('uno');
             },
           ),
         ),
