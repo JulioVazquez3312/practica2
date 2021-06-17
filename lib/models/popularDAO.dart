@@ -6,16 +6,16 @@ class Popular {
 }
 
 class Results {
-  int? voteCount;
-  String? posterpath;
-  String? backdrop_path;
-  String? title;
-  int? id;
-  String? overWiew;
-  String? release_date;
+  int vote_count;
+  String poster_path;
+  String backdrop_path;
+  String title;
+  int id;
+  String overview;
+  String release_date;
 
-  Results(this.voteCount, this.posterpath, this.backdrop_path, this.title,
-      this.id, this.overWiew, this.release_date);
+  Results(this.vote_count, this.poster_path, this.backdrop_path, this.title,
+      this.id, this.overview, this.release_date);
 
   factory Results.fromMap(Map<String, dynamic> map) {
     return Results(

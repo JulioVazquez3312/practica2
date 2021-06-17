@@ -55,7 +55,9 @@ class DashboardScreen extends StatelessWidget {
               ),
               title: Text('API REST', style: TextStyle(color: Colors.white)),
               trailing: Icon(Icons.chevron_right, color: Colors.white),
-              onTap: () {},
+              onTap: () {
+                Navigator.pushNamed(context, '/populares');
+              },
             ),
             SizedBox(
               height: 15,

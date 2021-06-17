@@ -3,6 +3,7 @@ import 'package:practica2/screens/conversor_screen.dart';
 import 'package:practica2/screens/dashboard_screen.dart';
 import 'package:practica2/screens/intenciones_screen.dart';
 import 'package:practica2/screens/login_screen.dart';
+import 'package:practica2/screens/popular_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -18,6 +19,7 @@ class MyApp extends StatelessWidget {
         '/dashboard': (context) => DashboardScreen(),
         '/intenciones': (context) => IntencionesScreen(),
         '/conversor': (context) => ConversorScreen(),
+        '/populares': (context) => PopularScreen(),
       },
       home: LoginScreen(),
     );
