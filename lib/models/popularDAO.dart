@@ -25,7 +25,7 @@ class Results {
       map['title'],
       map['id'],
       map['overview'],
-      map['release'],
+      map['release_date'],
     );
   }
 }

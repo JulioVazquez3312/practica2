@@ -14,7 +14,6 @@ class _PopularScreenState extends State<PopularScreen> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     apiMovies = ApiMovies();
   }
@@ -27,7 +26,9 @@ class _PopularScreenState extends State<PopularScreen> {
       ),
       body: FutureBuilder(
         future: apiMovies.getPopular(),
-        builder: (BuildContext, AsyncSnapshot<List<Results>?> snapshot) {
+        // ignore: non_constant_identifier_names
+        builder:
+            (BuildContext context, AsyncSnapshot<List<Results>?> snapshot) {
           if (snapshot.hasError) {
             return Center(
               child: Text('Has error in this request :('),
