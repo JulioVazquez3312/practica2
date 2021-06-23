@@ -19,13 +19,13 @@ class Results {
 
   factory Results.fromMap(Map<String, dynamic> map) {
     return Results(
-      map['vote_count'],
-      map['poster_path'],
-      map['backdrop_path'],
-      map['title'],
+      map['vote_count'] ?? 0,
+      map['poster_path'] ?? "",
+      map['backdrop_path'] ?? "",
+      map['title'] ?? "",
       map['id'],
-      map['overview'],
-      map['release_date'],
+      map['overview'] ?? "",
+      map['release_date'] ?? "",
     );
   }
 }

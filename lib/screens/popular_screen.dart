@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:practica2/models/popularDAO.dart';
 import 'package:practica2/network/api_movies.dart';
+import 'package:practica2/views/card_popular.dart';
 
 class PopularScreen extends StatefulWidget {
   PopularScreen({Key? key}) : super(key: key);
@@ -46,10 +47,15 @@ class _PopularScreenState extends State<PopularScreen> {
   }
 
   Widget _listPopulares(List<Results>? movies) {
-    return ListView.builder(
+    return ListView.separated(
+      separatorBuilder: (_, __) => Divider(height: 10),
+      padding: EdgeInsets.all(5.0),
       itemBuilder: (context, index) {
         Results movie = movies![index];
-        return Text(movie.title);
+        return //Text(movie.title);
+            CardPopular(
+          movie: movie,
+        );
       },
       itemCount: movies!.length,
     );
