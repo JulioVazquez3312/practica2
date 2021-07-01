@@ -30,7 +30,9 @@ dependencies:
   cupertino_icons: ^1.0.2  
   url_launcher: ^6.0.6
   image_picker: ^0.8.0+3
-  http: ^0.13.3
+  http: ^0.13.3  
+  syncfusion_flutter_calendar: ^19.2.44
+  syncfusion_flutter_maps: ^19.2.44-beta
 
 dev_dependencies:
   flutter_test:

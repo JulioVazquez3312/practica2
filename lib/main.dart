@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:practica2/screens/Mapas_screen.dart';
+import 'package:practica2/screens/calendario_screen.dart';
 import 'package:practica2/screens/conversor_screen.dart';
 import 'package:practica2/screens/dashboard_screen.dart';
 import 'package:practica2/screens/intenciones_screen.dart';
@@ -20,6 +22,8 @@ class MyApp extends StatelessWidget {
         '/intenciones': (context) => IntencionesScreen(),
         '/conversor': (context) => ConversorScreen(),
         '/populares': (context) => PopularScreen(),
+        '/calendario': (context) => CalendarioScreen(),
+        '/mapas': (context) => MapasScreen(),
       },
       home: LoginScreen(),
     );

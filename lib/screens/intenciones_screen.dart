@@ -1,5 +1,4 @@
 import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import 'package:practica2/settings/color_settings.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -131,6 +130,52 @@ class IntencionesScreen extends StatelessWidget {
               ),
               trailing: Icon(Icons.chevron_right),
               onTap: () => _OpenCamera(),
+            ),
+          ),
+          Card(
+            margin: EdgeInsets.all(20.0),
+            elevation: 10.0,
+            child: ListTile(
+              title: Text('Calendario',
+                  style: TextStyle(fontWeight: FontWeight.bold)),
+              subtitle: Row(
+                children: [Text('calendario'), Icon(Icons.touch_app)],
+              ),
+              leading: Container(
+                height: 38,
+                padding: EdgeInsets.only(right: 15.0),
+                child: Icon(Icons.calendar_today),
+                decoration: BoxDecoration(
+                    border: Border(
+                        right: BorderSide(width: 1.0, color: Colors.black))),
+              ),
+              trailing: Icon(Icons.chevron_right),
+              onTap: () {
+                Navigator.pushNamed(context, '/calendario');
+              },
+            ),
+          ),
+          Card(
+            margin: EdgeInsets.all(20.0),
+            elevation: 10.0,
+            child: ListTile(
+              title:
+                  Text('Mapas', style: TextStyle(fontWeight: FontWeight.bold)),
+              subtitle: Row(
+                children: [Text('Mapa'), Icon(Icons.touch_app)],
+              ),
+              leading: Container(
+                height: 38,
+                padding: EdgeInsets.only(right: 15.0),
+                child: Icon(Icons.map),
+                decoration: BoxDecoration(
+                    border: Border(
+                        right: BorderSide(width: 1.0, color: Colors.black))),
+              ),
+              trailing: Icon(Icons.chevron_right),
+              onTap: () {
+                Navigator.pushNamed(context, '/mapas');
+              },
             ),
           ),
         ],

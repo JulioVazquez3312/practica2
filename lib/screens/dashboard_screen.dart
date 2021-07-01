@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:practica2/settings/color_settings.dart';
+import 'dart:io';
 
 class DashboardScreen extends StatelessWidget {
   const DashboardScreen({Key? key}) : super(key: key);
@@ -67,7 +68,7 @@ class DashboardScreen extends StatelessWidget {
               leading: Icon(Icons.exit_to_app, color: Colors.white),
               title: Text('Salir', style: TextStyle(color: Colors.white)),
               trailing: Icon(Icons.chevron_right, color: Colors.white),
-              onTap: () {},
+              onTap: () => exit(0),
             ),
           ],
         ),

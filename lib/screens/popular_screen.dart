@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:practica2/models/popularDAO.dart';
 import 'package:practica2/network/api_movies.dart';
+import 'package:practica2/settings/color_settings.dart';
 import 'package:practica2/views/card_popular.dart';
 
 class PopularScreen extends StatefulWidget {
@@ -23,6 +24,7 @@ class _PopularScreenState extends State<PopularScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: ColorApps.backPrimaryColorApp,
         title: Text('Popular Movies :)'),
       ),
       body: FutureBuilder(
